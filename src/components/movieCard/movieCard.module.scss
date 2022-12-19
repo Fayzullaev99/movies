@@ -1,0 +1,95 @@
+.card{
+    width: 270px;
+    height: 440px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    &__box{
+        position: relative;
+        width: 100%;
+        height: 350px;
+    }
+    &__image{
+        width: 100%;
+        height: 100%;
+    }
+    &__watch{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(20, 20, 20, 0.76);
+        opacity: 0;
+        transition: 0.5s;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    &__view{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        &:hover{
+            color: #149A03;
+        }
+    }
+    &__icon{
+        font-size: 50px;
+    }
+    &__span{
+        margin: 5px 0 25px;
+        font-family: "Montserrat";
+        font-size: 16px;
+    }
+    &__btn{
+        font-family: "Montserrat";
+        font-size: 14px;
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 7px 13px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid #149A03;
+            color: #149A03;
+        }
+    }
+    &__info{
+        padding: 10px;
+    }
+    &__title{
+        font-family: "Montserrat";
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 7px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__rating{
+        width: 45px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: 1px solid #149A03;
+        font-size: 14px;
+        color: #149A03;
+    }
+    &__link{
+        font-family: "Montserrat";
+        font-size: 12px;
+        color: #149A03;
+        margin-right: 5px;
+        text-transform: capitalize;
+    }
+}

@@ -1,0 +1,71 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(20, 20, 20, 0.5);
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 99;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  &__icon {
+    font-size: 40px;
+    margin-right: 5%;
+    animation: icon 20s infinite linear alternate;
+  }
+  &__span {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  &__link {
+    display: block;
+    padding: 10px 15px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    &:before {
+      content: "";
+      background: #149A03;
+      display: block;
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      color: #149A03;
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+  &__link_active {
+    color: #fff;
+  }
+}
+@keyframes icon {
+  to {
+    transform: rotate(720deg);
+    color: #149A03;
+  }
+}

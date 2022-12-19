@@ -1,0 +1,8 @@
+export {default as Navbar} from './navbar'
+export {default as Movie} from './movie'
+export {default as MovieCard} from './movieCard'
+export {default as MovieDetails} from './movieDetails'
+export {default as SearchBar} from './searchBar'
+export {default as TopMovies} from './topMovies'
+export {default as Loader} from './loader'
+export {default as Footer} from './footer'
