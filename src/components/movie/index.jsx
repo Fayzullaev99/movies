@@ -1,18 +1,19 @@
 import React from 'react'
-import MovieCard from '../movieCard';
+import useGetData from '../../hooks/useGetData.js'
+import CardCarousel from '../carousel';
+import Loader from '../loader';
 import classes from "./movie.module.scss";
 function Movie() {
-  return (
+  const [data,loading] = useGetData('/discover/movie?sort_by=popularity.desc')
+ if (!loading) {
+  return data && (
     <div className={classes['movie']}>
-      <MovieCard />
-      <MovieCard />
-      <MovieCard />
-      <MovieCard />
-      <MovieCard />
-      <MovieCard />
-      <MovieCard />
+      <CardCarousel data={data} />
     </div>
   )
+ }else{
+  return <Loader />
+ }
 }
 
 export default Movie

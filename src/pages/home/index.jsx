@@ -1,10 +1,12 @@
 import React from 'react'
-import CardCarousel from '../../components/carousel'
+import Header from '../../components/header'
+import Movie from '../../components/movie'
 
 function Home() {
   return (
     <div>
-      <CardCarousel />
+      <Header />
+      <Movie />
     </div>
   )
 }
