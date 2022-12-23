@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React from 'react'
+import React, { useState } from 'react'
 import { FaReact } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 import useGetData from '../../hooks/useGetData';
@@ -24,10 +24,18 @@ const links = [
   },
 ]
 function Navbar() {
-  const [data] = useGetData('/discover/movie?sort_by=popularity.desc')
+  const [navbar,setNavbar] = useState(false)
   const location = useLocation()
+  const changeBg = ()=>{
+    if (window.scrollY >= 100) {
+      setNavbar(true)
+    }else{
+      setNavbar(false)
+    }
+  }
+  window.addEventListener('scroll',changeBg)
   return (
-    <nav className={classes['navbar']}>
+    <nav className={classNames(classes['navbar'],navbar && classes['active'])}>
       <Container className={classes['navbar__container']}>
         <Link to={"/"} className={classes['navbar__logo']}>
           <FaReact className={classes['navbar__icon']} />

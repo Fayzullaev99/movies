@@ -10,8 +10,12 @@ const useGetData = (url) => {
     useEffect(()=>{
         const getData = async()=>{
             setLoading(true)
-            const {data} = await axios.get(`${path}${url}&api_key=${key}&language=ru`)
-            setData(data.results)
+            const {data} = await axios.get(`${path}${url}`,{
+                params:{
+                    api_key:key
+                }
+            })
+            setData(data.results ? data.results : data)
             setLoading(false)
         }
         getData()

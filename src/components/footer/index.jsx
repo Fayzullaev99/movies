@@ -37,7 +37,7 @@ function Footer() {
         <p className={classes["footer__text"]}>© 2022 CINEPHILE. Может содержать информацию, не предназначенную для несовершеннолетних</p>
         <p className={classes["footer__text"]}>Данные получены с сайта themoviedb.org</p>
         <a 
-            href="https://app.netlify.com/sites/meinfolio/overview" 
+            href="https://meinfolio.netlify.app/" 
             target="_blank" 
             rel="noopener noreferrer"
             className={classes["footer__logo"]}

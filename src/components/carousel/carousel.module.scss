@@ -1,5 +1,18 @@
-.movie{
-    display: flex;
-    overflow: auto;
-    gap: 25px;
+.title {
+    margin: 40px 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-left: 5%;
+}
+
+.carousel {
+    &__slide {
+        display: flex;
+        overflow: hidden;
+        gap: 25px;
+    }
 }

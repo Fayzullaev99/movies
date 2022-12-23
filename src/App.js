@@ -1,6 +1,6 @@
 import {BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import { Home,Movies,NotFound,Search,Serials } from "./pages";
-import { Footer,MovieDetails,Navbar} from "./components";
+import { Footer,ShowMovie,Navbar, MovieDetails} from "./components";
 
 
 function App() {
@@ -12,7 +12,8 @@ function App() {
         <Route path="/movies" element={<Movies />} />
         <Route path="/serials" element={<Serials />} />
         <Route path="/search" element={<Search />} />
-        <Route path="/movie/:id" element={<MovieDetails />} />
+        <Route path="/movie/:id" element={<ShowMovie />} />
+        <Route path="/show/:id" element={<MovieDetails />} />
         <Route path="/error" element={<NotFound />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>

@@ -8,18 +8,18 @@ import 'swiper/css/navigation'
 import './carousel.styles.scss'
 
 
-const CardCarousel = ({data}) => {
+const CardCarousel = ({data,title}) => {
     return (
-    <>
-      <h2>Special Discount</h2>
-        <Swiper slidesPerView={6} navigation={true} modules={[Navigation]} className={classes['movie']} >
+    <div className={classes['carousel']}>
+      <h2 className={classes['title']}>{title}</h2>
+        <Swiper slidesPerView={6} navigation={true} modules={[Navigation]} className={classes['carousel__slide']} >
             {data.map((item)=>(
             <SwiperSlide key={item.id}>
                  <MovieCard item={item}/>
             </SwiperSlide>
             ))}
         </Swiper>
-    </>
+    </div>
   )
 }
 
