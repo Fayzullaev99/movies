@@ -9,12 +9,15 @@ console.log(data);
   const img_url = 'https://image.tmdb.org/t/p/w1280/'
   return data && (
     <div className={classes["actor"]}>
-        {data.cast.map((actor,i)=>(
-                <div className={classes["actor__box"]}>
-                <img src={`${actor.profile_path ? img_url+actor.profile_path : defaultImg}`} alt="" className={classes["actor_img"]} />
-                <p className={classes["details__actor_name"]}>{actor.name}</p>
+        {data.cast.map((actor,i)=>{
+            if (i<5) {return (
+            <div key={i} className={classes["actor__box"]}>
+                <img src={`${actor.profile_path ? img_url+actor.profile_path : defaultImg}`} alt="" className={classes["actor__img"]} />
+                <p className={classes["actor__name"]}>{actor.name}</p>
             </div>
-        ))}
+              )
+            }
+          })}
     </div>
   )
 }
