@@ -9,7 +9,6 @@ import classes from "./showMovie.module.scss";
 function ShowMovie() {
   const params = useParams()
   const [data,loading] = useGetData(`/movie/${params.id}/videos`)
-  console.log(data);
   if (loading) {
     return <Loader />
   }else{

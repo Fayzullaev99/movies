@@ -1,0 +1,41 @@
+.rating {
+    // width: 527px;
+    height: 463px;
+    display: flex;
+    gap: 23px;
+    position: relative;
+    padding-left: 14%;
+    margin-right: 25px;
+    &::after {
+        content: "";
+        background: linear-gradient(90deg, #141414 45%, rgba(20, 20, 20, 0) 102.08%);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__num {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 150px;
+        line-height: 183px;
+        color: #FFFFFF;
+        z-index: 10;
+    }
+
+    &__image{
+        width: 313px;
+        height: 100%;
+        vertical-align: bottom;
+        position: relative;
+    }
+}

@@ -4,8 +4,8 @@ import MovieCard from '../../components/movieCard'
 import useGetData from '../../hooks/useGetData'
 import Container from '../../layout/Container';
 import classes from "../page.module.scss";
-function Movies() {
-  const [data, loading] = useGetData('/movie/upcoming')
+function Popular() {
+  const [data, loading] = useGetData('/movie/popular')
   console.log(data);
   if (loading) {
     return <Loader />
@@ -21,4 +21,4 @@ function Movies() {
   }
 }
 
-export default Movies
+export default Popular

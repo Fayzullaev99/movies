@@ -1,0 +1,22 @@
+.page {
+    margin-top: 65px;
+    margin-bottom: 90px;
+}
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 25px;
+    & div {
+        width: 311px;
+    }
+}
+.title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 50px 15px;
+}

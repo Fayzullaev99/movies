@@ -1,9 +1,8 @@
 .swiper{
     padding-left: 5%;
 }
-.swiper-slide{
-    width: 270px !important;
-    margin-right: 25px;
+.swiper-wrapper{
+    column-gap: 30px;
 }
 .swiper-button-prev {
     left: 10px;

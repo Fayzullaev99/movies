@@ -7,7 +7,7 @@ import classes from './header.module.scss'
 import Loader from '../loader';
 function Header() {
     const navigate = useNavigate()
-    const [data,loading] = useGetData('/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2022-10-22')
+    const [data,loading] = useGetData('/movie/popular')
     const img_url = 'https://image.tmdb.org/t/p/w1280/'
     if (loading) {
         return <Loader />
@@ -24,7 +24,7 @@ function Header() {
                             <span className={classes['header__span']}>Подробнее</span>
                         </button>
                     </div>
-                    <Link to={`/movie/${data[1].id}`} className={classes["header__next-movie"]}>
+                    <Link to={`/show/${data[1].id}`} className={classes["header__next-movie"]}>
                         <div className={classes["header__next-info"]}>
                             <img src={`https://image.tmdb.org/t/p/w1280/${data[1].backdrop_path}`} alt={data[1].original_title} className={classes["header__next-img"]} />
                             <p className={classes["header__next-text"]}>Следующий</p>

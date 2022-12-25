@@ -24,7 +24,7 @@
   &__icon {
     font-size: 40px;
     margin-right: 5%;
-    animation: icon 20s infinite linear alternate;
+    animation: icon 15s infinite linear;
   }
   &__span {
     font-size: 25px;
@@ -69,8 +69,16 @@
   }
 }
 @keyframes icon {
-  to {
-    transform: rotate(720deg);
+  0%{
+    transform: rotate(0deg);
+    color: #fff;
+  }
+  50%{
+    transform: rotate(360deg);
     color: #149A03;
+  }
+  100%{
+    transform: rotate(720deg);
+    color: #fff;
   }
 }

@@ -15,8 +15,8 @@ const links = [
     text:'Movies'
   },
   {
-    link:'/serials',
-    text:'Serials'
+    link:'/popular',
+    text:'Popular'
   },
   {
     link:'/search',

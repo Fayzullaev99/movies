@@ -1,0 +1,28 @@
+.top {
+    padding: 30px 0 90px;
+    background: rgb(247, 254, 237);
+    margin-top: 50px;
+
+    &__title {
+        margin-bottom: 90px;
+        margin-left: 5%;
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        color: #141414;
+        display: flex;
+        align-items: center;
+
+        & span {
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 30px;
+            color: #149A03;
+            margin-left: 15px;
+        }
+    }
+}

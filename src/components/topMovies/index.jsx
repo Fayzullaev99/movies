@@ -4,11 +4,12 @@ import CardCarousel from '../carousel';
 import Loader from '../loader';
 import classes from "./topMovie.module.scss";
 function TopMovies() {
-  const [data,loading] = useGetData('/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc')
+  const [data,loading] = useGetData('/movie/top_rated')
  if (!loading) {
   return data && (
     <div className={classes['top']}>
-      <CardCarousel data={data} />
+      <h2 className={classes['top__title']}>ТОП <span>10</span></h2>
+      <CardCarousel rating={data.slice(0, 10)} />
     </div>
   )
  }else{

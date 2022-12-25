@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import {FaPlay} from 'react-icons/fa'
 import useGetData from '../../hooks/useGetData'
 import Loader from '../loader'
@@ -9,10 +9,10 @@ import classes from "./movieDetails.module.scss";
 import Actors from '../actors'
 function MovieDetails() {
   const params = useParams()
+  const navigate = useNavigate()
   const [data,loading] = useGetData(`/movie/${params.id}`)
   const img_url = 'https://image.tmdb.org/t/p/w1280/'
-  
-  console.log(data);
+
   if (loading) {
     return <Loader />
   }else if (data) {
@@ -31,7 +31,7 @@ function MovieDetails() {
             </span>
             <span className={classes["details__history"]}>{original_language}</span>
             </div>
-            <button className={classes["details__trailer"]}><FaPlay />Смотерть трейлер</button>
+            <button className={classes["details__trailer"]} onClick={()=>navigate(`/movie/${params.id}`)}><FaPlay />Смотерть трейлер</button>
             <p className={classes['details__actors-info']}>В главных ролях</p>
           </div>
           <div className={classes["details__image"]}>

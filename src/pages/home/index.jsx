@@ -1,7 +1,5 @@
 import React from 'react'
-import Header from '../../components/header'
-import Movie from '../../components/movie'
-import Serial from '../../components/serial'
+import {Header,Movie,Serial,TopMovies} from '../../components'
 
 function Home() {
   return (
@@ -9,6 +7,7 @@ function Home() {
       <Header />
       <Movie />
       <Serial />
+      <TopMovies />
     </div>
   )
 }

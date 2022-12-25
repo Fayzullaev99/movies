@@ -8,6 +8,7 @@ function MovieCard({item}) {
   const {original_title,poster_path,vote_average,id} = item
   const img_url = 'https://image.tmdb.org/t/p/w500/'
   return (
+    <>
     <div className={classes['card']}>
       <div className={classes['card__box']}>
         <img src={`${poster_path ?img_url+poster_path : defaultImg}`} alt={original_title} className={classes["card__image"]} />
@@ -34,6 +35,7 @@ function MovieCard({item}) {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
