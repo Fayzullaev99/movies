@@ -1,0 +1,21 @@
+.recommend{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 25px;
+    padding: 50px 0;
+    & div {
+        width: 311px;
+    }
+    &__title{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        text-transform: capitalize;
+    }
+}

@@ -1,9 +1,10 @@
-.details{
+.details {
     margin-top: 65px;
     padding-bottom: 30px;
     height: calc(100vh - 65px);
     position: relative;
-    &::after{
+
+    &::after {
         content: "";
         position: absolute;
         top: 0;
@@ -12,13 +13,15 @@
         height: 100%;
         background: linear-gradient(90deg, #000000 23.2%, rgba(0, 0, 0, 0.7) 82.82%, rgba(0, 0, 0, 0.7) 97.73%);
     }
-    &__bg{
+
+    &__bg {
         position: absolute;
         right: 0;
         top: 0;
         height: 100%;
     }
-    &__block{
+
+    &__block {
         position: relative;
         z-index: 10;
         height: calc(100% - 55px);
@@ -26,14 +29,16 @@
         justify-content: space-around;
         align-items: center;
     }
-    &__info{
+
+    &__info {
         width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
     }
-    &__title{
+
+    &__title {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
@@ -42,7 +47,8 @@
         color: #FFFFFF;
         margin-bottom: 20px;
     }
-    &__text{
+
+    &__text {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
@@ -51,7 +57,8 @@
         color: #FFFFFF;
         margin-bottom: 25px;
     }
-    &__history{
+
+    &__history {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
@@ -60,7 +67,8 @@
         color: rgba(255, 255, 255, 0.6);
         text-transform: capitalize;
     }
-    &__trailer{
+
+    &__trailer {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
@@ -80,7 +88,8 @@
         margin-top: 75px;
         cursor: pointer;
     }
-    &__actors-info{
+
+    &__actors-info {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
@@ -89,13 +98,49 @@
         text-align: center;
         color: #FFFFFF;
     }
-    &__image{
+
+    &__image {
         width: 311px;
         height: 462px;
-        & img{
+
+        & img {
             width: 100%;
             height: 100%;
             border-radius: 10px;
         }
+    }
+}
+
+.details {
+    &__about {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__about-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+
+    &__about-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
     }
 }

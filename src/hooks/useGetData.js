@@ -12,8 +12,7 @@ const useGetData = (url) => {
             setLoading(true)
             const {data} = await axios.get(`${path}${url}`,{
                 params:{
-                    api_key:key,
-                    per_page: 10
+                    api_key:key
                 }
             })
             setData(data.results ? data.results : data)
