@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React, { useState } from 'react'
-import { FaReact } from 'react-icons/fa';
+import { FaReact, FaSearch } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 import useGetData from '../../hooks/useGetData';
 import Container from '../../layout/Container';
@@ -20,7 +20,7 @@ const links = [
   },
   {
     link:'/search',
-    text:'Search'
+    text:<FaSearch />
   },
 ]
 function Navbar() {

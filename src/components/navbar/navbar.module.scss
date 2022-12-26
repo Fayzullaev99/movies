@@ -4,7 +4,6 @@
   left: 0;
   width: 100%;
   background: rgba(20, 20, 20, 0.5);
-  padding: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   z-index: 999;
   &.active{
@@ -38,7 +37,7 @@
   }
   &__link {
     display: block;
-    padding: 10px 15px;
+    padding: 20px 15px;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;

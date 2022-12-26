@@ -59,7 +59,7 @@ function MovieDetails() {
         </div>
         <div className={classes["details__box"]}>
           <h4 className={classes["details__about-title"]}>production countries</h4>
-          <p className={classes["details__about-text"]}>{production_countries[0].name}</p>
+          <p className={classes["details__about-text"]}>{production_countries.length > 0 ? production_countries[0].name : "unknown"}</p>
         </div>
       </div>
       <Recommend title="recommendations" />

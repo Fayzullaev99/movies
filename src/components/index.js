@@ -1,7 +1,5 @@
 export {default as Navbar} from './navbar'
 export {default as Header} from './header'
-export {default as Movie} from './movie'
-export {default as Serial} from './serial'
 export {default as MovieCard} from './movieCard'
 export {default as MovieDetails} from './movieDetails'
 export {default as ShowMovie} from './showMovie'

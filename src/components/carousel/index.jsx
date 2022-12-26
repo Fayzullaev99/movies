@@ -20,7 +20,7 @@ const CardCarousel = ({ data, title, rating }) => {
           </SwiperSlide>
         ))}
       </Swiper>}
-      {rating && <Swiper slidesPerView={3.8} navigation={true} modules={[Navigation]} className={classes['carousel__slide']} >
+      {rating && <Swiper navigation={true} modules={[Navigation]} className={classes['carousel__slide']} >
         {rating.map((item, i) => (
           <SwiperSlide key={item.id}>
             <RatingCard item={item} index={i + 1} />
