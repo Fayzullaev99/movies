@@ -1,7 +1,8 @@
 import {BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import { ToastContainer} from 'react-toastify';
 import { Home,Movies,NotFound,Search,Popular } from "./pages";
 import { Footer,ShowMovie,Navbar, MovieDetails} from "./components";
-
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
+      <ToastContainer />
     </Router>
   );
 }

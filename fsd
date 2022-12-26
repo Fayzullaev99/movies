@@ -1,0 +1,41 @@
+[33mcommit 3595184a1ac4f9be415323c8eb76d408dabcc18f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Sanjar <youaxample@mail.com>
+Date:   Sun Dec 25 20:58:23 2022 +0500
+
+    movie, popular finished
+
+[33mcommit b84b707080082dbf442f7b1b799ef11430140958[m
+Author: Sanjar <sanjarfayzullaev99@gmail.com>
+Date:   Sat Dec 24 02:38:54 2022 +0500
+
+    movie details finished
+
+[33mcommit a0b27fe07b96cca86763694ce223858979b355d3[m
+Author: Sanjar <youaxample@mail.com>
+Date:   Fri Dec 23 21:13:46 2022 +0500
+
+    need repairing movieDetails
+
+[33mcommit 0548fd20b87a2a2f42b8555832b38ed7105f6de7[m
+Author: Sanjar <youaxample@mail.com>
+Date:   Tue Dec 20 19:35:28 2022 +0500
+
+    Home page
+
+[33mcommit d125a75ba361f0e37331e183e5518764bd473e60[m
+Author: Sanjar <sanjarfayzullaev99@gmail.com>
+Date:   Tue Dec 20 04:24:52 2022 +0500
+
+    a part of navbar and footer finished
+
+[33mcommit 4fd5dd6b2840062e37f7dbeb62ff963cf282077f[m
+Author: Sanjar <sanjarfayzullaev99@gmail.com>
+Date:   Mon Dec 19 23:34:10 2022 +0500
+
+    triller started
+
+[33mcommit 82c805c57ebb06184018696365e75defdf05e9ee[m
+Author: Sanjar <sanjarfayzullaev99@gmail.com>
+Date:   Mon Dec 19 23:12:47 2022 +0500
+
+    Initialize project using Create React App
