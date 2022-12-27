@@ -14,7 +14,6 @@ function MovieDetails() {
   const navigate = useNavigate()
   const [data,loading] = useGetData(`/movie/${params.id}`)
   const img_url = 'https://image.tmdb.org/t/p/w1280/'
-  console.log(data);
   if (loading) {
     return <Loader />
   }else if (data) {

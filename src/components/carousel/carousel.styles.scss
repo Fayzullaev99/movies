@@ -1,18 +1,22 @@
 .swiper{
-    padding-left: 5%;
+    padding:30px 100px !important;
 }
 .swiper-wrapper{
-    column-gap: 30px;
-}
-.swiper-button-prev {
-    left: 10px;
-}
-
-.swiper-button-next {
-    right: 10px;
+    height: 400px;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: #fff;
+    opacity: 1 !important;
+    color: white !important;
+
+    &.swiper-button-disabled {
+        display: none;
+    }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-weight: 700;
+    font-size: 30px;
 }

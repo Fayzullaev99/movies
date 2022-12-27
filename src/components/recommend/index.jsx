@@ -6,7 +6,7 @@ import MovieCard from '../movieCard'
 import classes from './recommend.module.scss'
 function Recommend({title}) {
     const params = useParams()
-    const [data,loading] = useGetData(`/movie/${params.id}/${title}`)
+    const [data,loading] = useGetData(`/movie/${params.id}/recommendations`)
     if (loading) {
         return <Loader />
       } else if (data) {

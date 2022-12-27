@@ -1,12 +1,17 @@
 .card{
-    // width: 270px;
-    height: 440px;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    height: 400px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px #000000);
+    border-radius: 10px;
+    transition: 0.3s;
+    &:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(21, 154, 3, 0.473) 0px 22px 40px 4px;
+    }
     &__box{
         position: relative;
         width: 100%;
-        height: 350px;
+        height: 300px;
     }
     &__image{
         width: 100%;
@@ -35,9 +40,6 @@
         justify-content: center;
         align-items: center;
         color: #fff;
-        &:hover{
-            color: #149A03;
-        }
     }
     &__icon{
         font-size: 50px;
@@ -66,7 +68,7 @@
     }
     &__title{
         font-family: "Montserrat";
-        font-size: 18px;
+        font-size: 16px;
         color: #fff;
         margin-bottom: 7px;
         text-transform: uppercase;
@@ -85,11 +87,26 @@
         font-size: 14px;
         color: #149A03;
     }
-    &__link{
+    &__date,&__like{
+        border: none;
+        background: transparent;
+        display: inline-block;
         font-family: "Montserrat";
-        font-size: 12px;
-        color: #149A03;
-        margin-right: 5px;
-        text-transform: capitalize;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    &__date{
+        color: #fff;
+        margin-right: 15%;
+        & svg{
+            margin-right:5px;
+        }
+    }
+    &__like{
+        color: red;
+        & svg{
+            color: red;
+            margin-right:5px;
+        }
     }
 }

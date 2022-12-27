@@ -1,12 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat+Alternates:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&family=Raleway:wght@400;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: #141414;
 }
-a{
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 10px;
+    background: linear-gradient(to bottom, #149A03 25%, rgb(176, 240, 124) 50%, rgb(176, 240, 124) 50%, #149A03 75%);
+    border-radius: 5px;
+}
+
+a {
     text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+}
+input{
+    outline: none;
 }

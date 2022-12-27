@@ -1,5 +1,0 @@
-export {default as Home} from './home'
-export {default as Movies} from './movies'
-export {default as NotFound} from './notFound'
-export {default as Search} from './search'
-export {default as Popular} from './popular'

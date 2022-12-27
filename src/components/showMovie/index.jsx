@@ -7,13 +7,15 @@ import Loader from '../loader'
 import Container from '../../layout/Container'
 import classes from "./showMovie.module.scss";
 import Recommend from '../recommend'
+import NoPage from '../../pages/noPage'
 function ShowMovie() {
   const params = useParams()
-  const [data,loading] = useGetData(`/movie/${params.id}/videos`)
-  if (loading) {
+  const [data,loading,error] = useGetData(`/tv/${params.id}/videos`)
+  if (!data || data.length === 0 || error) {
+    return <NoPage />
+  }else if(loading){
     return <Loader />
   }else{
-    
     return (
       <Container className={classNames(classes['show'])}>
         {data && (
